@@ -152,6 +152,7 @@ main {
 #coming-soon {
     position: relative;
     top: 46%;
+    color: white;
     /* border: 1px solid red; */
 }
 
