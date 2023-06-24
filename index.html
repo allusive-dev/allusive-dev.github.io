@@ -8,7 +8,7 @@
 <body>
     <nav id="navbar">
         <div id="nav-item"></div>
-        <div class="nav-item"><h3>about me</h3></div>
+        <div class="nav-item"><h3><a href="#about">about me</a></h3></div>
         <div class="nav-item"><h3>work</h3></div>
         <!-- <div class="nav-item"><img id="nav-logo" src="/assets/images/logo.png" alt="logo"></div> -->
         <div class="nav-item"><h3>projects</h3></div>
@@ -25,17 +25,28 @@
             </section>
         </article>
         <article id="about">
-            <section id="about-main">
-                <div id="coding">
-                    <h3>Coding</h3>
-                    <!-- <p>I have coded in many different languages over the past few years including Java, HTML, CSS, Python and a few more.</p> -->
-                </div>
-                <div id="editing">editing</div>
-                <div id="pc-building">pc-building</div>
-                <div id="linux-git">linux and git</div>
-                <div id="about-me">about me</div>
-            </section>
+            <div id="coming-soon"><h3>Keep checking for new updates as I expand and develop!</h3></div>
+            <!-- <div id="coding">
+                <h3>Coding</h3>
+                <p>I have coded in many different languages over the past few years including Java, HTML, CSS, Python and a few more.</p>
+            </div>
+            <div id="editing">editing</div>
+            <div id="pc-building">pc-building</div>
+            <div id="linux-git">linux and git</div>
+            <div id="about-me">about me</div> -->
         </article>
     </main>
 </body>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+})
+</script>
 </html>

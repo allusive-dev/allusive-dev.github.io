@@ -21,6 +21,22 @@
     box-sizing: border-box;
 }
 
+*:link {
+    text-decoration: none;
+}
+
+*:visited {
+    text-decoration: none;
+}
+
+*:hover {
+    text-decoration: none;
+}
+
+*:active {
+    text-decoration: none;
+}
+
 body::-webkit-scrollbar {
     display: none;
   }
@@ -33,6 +49,7 @@ body {
     scrollbar-width: none;
     -ms-overflow-style: none;
     z-index: 1;
+    scroll-behavior: smooth;
 }
 
 /* Navigation Bar */
@@ -57,7 +74,13 @@ nav div {
     font-family: 'Source Sans 3', sans-serif;
     font-weight: bold;
     font-size: 20px;
+    text-decoration: none;
 }
+
+nav div h3 a {
+    color: inherit;
+}
+
 
 /* Main */
 
@@ -88,7 +111,7 @@ main {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1;
+    z-index: 0;
 }
 
 #header-main {
@@ -102,6 +125,8 @@ main {
     color: rgba(255, 255, 255, 0.831);
     animation: fadeInUp;
     animation-duration: 3s;
+    /* border: 1px solid red; */
+    min-width: 250px;
 }
 
 #header-main h1 {
@@ -117,10 +142,20 @@ main {
     background-color: #100D30;
     height: 70vh;
     width: 100vw;
-    border: 1px solid red;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    z-index: 1;
+    /* border: 1px solid red; */
 }
 
-#about-main {
+#coming-soon {
+    position: relative;
+    top: 46%;
+    /* border: 1px solid red; */
+}
+
+/* #about-main {
     position: relative;
     height: 40vh;
     width: 50vw;
@@ -157,4 +192,4 @@ main {
 #about-me {
     grid-row-start: 1;
     grid-row-end: 3;
-}
+} */
