@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@100;200;300;400;500;600;700&display=swap');
+
+ @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInUp {
+    animation-name: fadeInUp;
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 3000px;
+    background-color: black;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    z-index: 1;
+}
+
+/* Navigation Bar */
+
+#navbar {
+    display: grid;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto auto auto auto auto auto;
+    z-index: 10;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 90%);
+}
+
+nav div {
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Main */
+
+main {
+    position: absolute;
+    top: 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+
+#header {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    /* border: 1px solid purple; */
+    background-size: cover;
+}
+
+#bg {
+    background-image: url('/assets/images/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(6px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+#header-main {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 30vh;
+    width: 30vw;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.831);
+    animation: fadeInUp;
+    animation-duration: 3s;
+}
+
+#header-main h1 {
+    font-size: 58px;
+    font-weight: 600;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+
+/* About */
+
+#about {
+    background-color: #100D30;
+    height: 70vh;
+    width: 100vw;
+    border: 1px solid red;
+}
+
+#about-main {
+    position: relative;
+    height: 40vh;
+    width: 50vw;
+    margin: auto;
+    top: 18%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    border: 1px solid red;
+    gap: 5vh;
+    color: white;
+}
+
+#about-main div {
+    background-color: #1A154D;
+    position: relative;
+    box-shadow: 0px 0px 10px 10px #0e0c2a;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+#coding {
+}
+
+#editing {
+}
+
+#pc-building {
+}
+
+#linux-git {
+}
+
+#about-me {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
