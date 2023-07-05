@@ -183,9 +183,9 @@ main {
     scrollbar-width: none;
     -ms-overflow-style: none;
     transition: ease-in-out 0.5s;
-    background: linear-gradient(220.55deg, #b354d0 0%, #4730BD 100%);
+    background: linear-gradient(220.55deg, #9246aa 0%, #2c1e71 100%);
     position: relative;
-    box-shadow: 0px 0px 10px 10px #270064;
+    box-shadow: 0px 0px 8px 8px #270064;
     border-radius: 20px;
     width: 20%;
 }
@@ -224,5 +224,19 @@ main {
 #about-me {
     margin: auto;
     top: 15vh;
-    width: 50vw;
+    width: 55vw;
+    color: #FFF;
+}
+
+#about-me h2 {
+    font-family: 'Montserrat', sans-serif;
+    /* transform: translateY(-50%); */
+    /* margin-top: 11vh; */
+}
+
+.about-me-text {
+    position: relative;
+    margin-left: 18px;
+    margin-right: 18px;
+    font-family: 'Source Sans 3', sans-serif;
 }
