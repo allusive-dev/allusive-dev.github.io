@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
  @keyframes fadeInUp {
     from {
@@ -17,29 +19,36 @@
     animation-name: fadeInUp;
   }
 
+  @keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    to {
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+/*   
+    to {
+      transform: scale3d(1, 1, 1);
+    } */
+  }
+  
+  .pulse {
+    animation-name: pulse;
+    animation-timing-function: ease-in-out;
+  }
+
 * {
     box-sizing: border-box;
 }
 
-*:link {
+* a:link {
     text-decoration: none;
 }
 
-*:visited {
-    text-decoration: none;
-}
-
-*:hover {
-    text-decoration: none;
-}
-
-*:active {
-    text-decoration: none;
-}
-
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
     display: none;
-  }
+}
 
 body {
     margin: 0px;
@@ -135,7 +144,6 @@ main {
     font-family: 'Source Sans 3', sans-serif;
 }
 
-
 /* About */
 
 #about {
@@ -156,41 +164,66 @@ main {
     /* border: 1px solid red; */
 }
 
-/* #about-main {
+#about-main {
     position: relative;
     height: 40vh;
-    width: 50vw;
+    width: 55vw;
     margin: auto;
     top: 18%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    border: 1px solid red;
-    gap: 5vh;
+    display: flex;
+    column-gap: 2vw;
     color: white;
 }
 
 #about-main div {
-    background-color: #1A154D;
+    /* background: rgb(20,15,59); */
+    background: linear-gradient(220.55deg, #b354d0 0%, #4730BD 100%);
+    /* background: linear-gradient(315deg, rgba(20,15,59,1) 53%, rgba(46,31,81,1) 69%, rgba(71,46,102,1) 81%, rgba(151,93,169,1) 100%); */
     position: relative;
-    box-shadow: 0px 0px 10px 10px #0e0c2a;
-    border: 1px solid red;
-    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 10px #270064;
+    border-radius: 20px;
+    width: 20%;
 }
 
-#coding {
+.am-panel {
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    transition: ease-in-out 0.5s;
 }
 
-#editing {
+.am-panel:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
 }
 
-#pc-building {
+.am-panel h3 {
+    font-family: 'Montserrat', sans-serif;
+    transform: translateY(-50%);
+    margin-top: 11vh;
 }
 
-#linux-git {
+/* CODING ABOUT ME PANEL */
+
+.coding-text {
+    position: relative;
+    margin-left: 18px;
+    margin-right: 18px;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
-#about-me {
-    grid-row-start: 1;
-    grid-row-end: 3;
-} */
+/* EDITING ABOUT ME PANEL */
+
+.editing-text {
+    position: relative;
+    margin-left: 18px;
+    margin-right: 18px;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+/* PC BUILDING ABOUT ME PANEL */
+
+
+/* LINUX + GITHUB ABOUT ME PANEL */
+
+
+/* ABOUT ME PANEL */
