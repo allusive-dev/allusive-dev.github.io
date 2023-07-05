@@ -148,7 +148,7 @@ main {
 
 #about {
     background-color: #100D30;
-    height: 70vh;
+    height: 80vh;
     width: 100vw;
     text-align: center;
     font-family: 'JetBrains Mono', monospace;
@@ -157,39 +157,37 @@ main {
     /* border: 1px solid red; */
 }
 
-#coming-soon {
-    position: relative;
-    top: 46%;
-    color: white;
-    /* border: 1px solid red; */
-}
-
 #about-main {
+    /* border: 1px solid red; */
     position: relative;
     height: 40vh;
+    top: 16%;
     width: 55vw;
+    justify-content: center;
     margin: auto;
-    top: 18%;
     display: flex;
-    column-gap: 2vw;
+    column-gap: 1.7vw;
     color: white;
 }
 
-#about-main div {
-    /* background: rgb(20,15,59); */
+@media only screen and (max-width: 1600px) {
+    #about-main {
+        column-gap: 2vw;
+    }
+    
+}
+
+.am-panel {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    transition: ease-in-out 0.5s;
     background: linear-gradient(220.55deg, #b354d0 0%, #4730BD 100%);
-    /* background: linear-gradient(315deg, rgba(20,15,59,1) 53%, rgba(46,31,81,1) 69%, rgba(71,46,102,1) 81%, rgba(151,93,169,1) 100%); */
     position: relative;
     box-shadow: 0px 0px 10px 10px #270064;
     border-radius: 20px;
     width: 20%;
-}
-
-.am-panel {
-    overflow: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    transition: ease-in-out 0.5s;
 }
 
 .am-panel:hover {
@@ -202,23 +200,18 @@ main {
     margin-top: 11vh;
 }
 
-/* CODING ABOUT ME PANEL */
-
-.coding-text {
+.about-text {
     position: relative;
     margin-left: 18px;
     margin-right: 18px;
     font-family: 'Source Sans 3', sans-serif;
 }
+
+/* CODING ABOUT ME PANEL */
+
 
 /* EDITING ABOUT ME PANEL */
 
-.editing-text {
-    position: relative;
-    margin-left: 18px;
-    margin-right: 18px;
-    font-family: 'Source Sans 3', sans-serif;
-}
 
 /* PC BUILDING ABOUT ME PANEL */
 
@@ -227,3 +220,9 @@ main {
 
 
 /* ABOUT ME PANEL */
+
+#about-me {
+    margin: auto;
+    top: 15vh;
+    width: 50vw;
+}
