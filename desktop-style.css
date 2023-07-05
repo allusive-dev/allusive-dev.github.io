@@ -114,7 +114,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: blur(6px);
+    filter: blur(12px);
     position: absolute;
     top: 0;
     left: 0;
