@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+ @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInUp {
+    animation-name: fadeInUp;
+  }
+
+  @keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    to {
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+/*   
+    to {
+      transform: scale3d(1, 1, 1);
+    } */
+  }
+  
+  .pulse {
+    animation-name: pulse;
+    animation-timing-function: ease-in-out;
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+* a:link {
+    text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 3000px;
+    background-color: black;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    z-index: 1;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+
+#navbar {
+    display: grid;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto auto auto auto auto auto;
+    z-index: 10;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 90%);
+}
+
+nav div {
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav div h3 a {
+    color: inherit;
+}
+
+
+/* Main */
+
+main {
+    position: absolute;
+    top: 0px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+
+#header {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    /* border: 1px solid purple; */
+    background-size: cover;
+}
+
+#bg {
+    background-image: url('/assets/images/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(6px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+#header-main {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 30vh;
+    width: 30vw;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.831);
+    animation: fadeInUp;
+    animation-duration: 3s;
+    /* border: 1px solid red; */
+    min-width: 250px;
+}
+
+#header-main h1 {
+    font-size: 58px;
+    font-weight: 600;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+/* About */
+
+#about {
+    background-color: #100D30;
+    height: 80vh;
+    width: 100vw;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    z-index: 1;
+    /* border: 1px solid red; */
+}
+
+#about-main {
+    /* border: 1px solid red; */
+    position: relative;
+    height: 40vh;
+    top: 16%;
+    width: 55vw;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.7vw;
+    color: white;
+}
+
+@media only screen and (max-width: 1600px) {
+    #about-main {
+        column-gap: 2vw;
+    }
+    
+}
+
+.am-panel {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    transition: ease-in-out 0.5s;
+    background: linear-gradient(220.55deg, #9246aa 0%, #2c1e71 100%);
+    position: relative;
+    box-shadow: 0px 0px 8px 8px #270064;
+    border-radius: 20px;
+    width: 20%;
+}
+
+.am-panel:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.am-panel h3 {
+    font-family: 'Montserrat', sans-serif;
+    transform: translateY(-50%);
+    margin-top: 11vh;
+}
+
+.about-text {
+    position: relative;
+    margin-left: 18px;
+    margin-right: 18px;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+/* CODING ABOUT ME PANEL */
+
+
+/* EDITING ABOUT ME PANEL */
+
+
+/* PC BUILDING ABOUT ME PANEL */
+
+
+/* LINUX + GITHUB ABOUT ME PANEL */
+
+
+/* ABOUT ME PANEL */
+
+#about-me {
+    margin: auto;
+    top: 15vh;
+    width: 55vw;
+    color: #FFF;
+}
+
+#about-me h2 {
+    font-family: 'Montserrat', sans-serif;
+    /* transform: translateY(-50%); */
+    /* margin-top: 11vh; */
+}
+
+.about-me-text {
+    position: relative;
+    margin-left: 18px;
+    margin-right: 18px;
+    font-family: 'Source Sans 3', sans-serif;
+}
