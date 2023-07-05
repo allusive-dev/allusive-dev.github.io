@@ -38,6 +38,10 @@
     animation-timing-function: ease-in-out;
   }
 
+* {
+    box-sizing: border-box;
+}
+
 * a:link {
     text-decoration: none;
 }
@@ -106,7 +110,7 @@ main {
 }
 
 #bg {
-    background-image: url('/assets/images/header-bg.jpg');
+    background-image: url('/assets/images/header-bg-green.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -123,7 +127,7 @@ main {
     position: relative;
     margin: auto;
     text-align: center;
-    top: 25vh;
+    top: 35vh;
     width: 30vw;
     font-family: 'JetBrains Mono', monospace;
     font-size: 20px;
@@ -143,8 +147,8 @@ main {
 /* About */
 
 #about {
-    background-color: #100D30;
-    height: 1400px;
+    background-color: #0E1211;
+    height: 80vh;
     width: 100vw;
     text-align: center;
     font-family: 'JetBrains Mono', monospace;
@@ -158,12 +162,12 @@ main {
     position: relative;
     height: 40vh;
     top: 16%;
-    width: 40vw;
+    width: 55vw;
+    justify-content: center;
     margin: auto;
-    padding: 0;
     display: flex;
-    flex-direction: column;
-    row-gap: 3.2vh;
+    flex-direction: row;
+    column-gap: 1.7vw;
     color: white;
 }
 
@@ -175,12 +179,16 @@ main {
 }
 
 .am-panel {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     transition: ease-in-out 0.5s;
-    background: linear-gradient(220.55deg, #9246aa 0%, #2c1e71 100%);
+    background: linear-gradient(220.55deg, #00a153 0%, #004c27 100%);
     position: relative;
-    box-shadow: 0px 0px 8px 8px #270064;
+    box-shadow: 0px 0px 8px 8px #00391d;
     border-radius: 20px;
-    width: 100%;
+    width: 20%;
 }
 
 .am-panel:hover {
@@ -189,8 +197,8 @@ main {
 
 .am-panel h3 {
     font-family: 'Montserrat', sans-serif;
-    /* transform: translateY(-50%);
-    margin-top: 11vh; */
+    transform: translateY(-50%);
+    margin-top: 11vh;
 }
 
 .about-text {
@@ -214,22 +222,22 @@ main {
 
 /* ABOUT ME PANEL */
 
-/* #am-container {
-    position: relative;
-    height: 1400px;
-    width: 100vw;
-    border: 1px solid red;
-}
-
 #about-me {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 40vw;
     margin: auto;
+    top: 15vh;
+    width: 55vw;
+    color: #FFF;
 }
 
 #about-me h2 {
     font-family: 'Montserrat', sans-serif;
-    color: #FFF;
-} */
+    /* transform: translateY(-50%); */
+    /* margin-top: 11vh; */
+}
+
+.about-me-text {
+    position: relative;
+    margin-left: 18px;
+    margin-right: 18px;
+    font-family: 'Source Sans 3', sans-serif;
+}
