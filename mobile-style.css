@@ -140,6 +140,26 @@ main {
     font-family: 'Source Sans 3', sans-serif;
 }
 
+#platform-switcher {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF00;
+    border-radius: 20px;
+    position: relative;
+    top: 15vh;
+    color: #FFF;
+    padding-left: 8px;
+    padding-right: 8px;
+    transition: ease-in-out 0.5s;
+}
+
+#platform-switcher:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+
+#platform-switcher a {
+    color: #FFF;
+}
+
 /* About */
 
 #about {
