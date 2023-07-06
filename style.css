@@ -91,11 +91,10 @@ main {
 }
 
 #bg {
-    background-image: url('/assets/images/header-bg-green.jpg');
+    background-image: url('/assets/images/header-bg-green-blur.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: blur(12px);
     position: absolute;
     top: 0;
     left: 0;
