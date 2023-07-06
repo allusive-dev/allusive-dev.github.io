@@ -187,13 +187,6 @@ main {
     color: white;
 }
 
-@media only screen and (max-width: 1600px) {
-    #about-main {
-        column-gap: 2vw;
-    }
-    
-}
-
 .am-panel {
     transition: ease-in-out 0.5s;
     background: linear-gradient(220.55deg, #00a153 0%, #004c27 100%);

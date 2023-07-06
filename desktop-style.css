@@ -19,25 +19,6 @@
     animation-name: fadeInUp;
   }
 
-  @keyframes pulse {
-    from {
-      transform: scale3d(1, 1, 1);
-    }
-  
-    to {
-      transform: scale3d(1.05, 1.05, 1.05);
-    }
-/*   
-    to {
-      transform: scale3d(1, 1, 1);
-    } */
-  }
-  
-  .pulse {
-    animation-name: pulse;
-    animation-timing-function: ease-in-out;
-  }
-
 * {
     box-sizing: border-box;
 }
@@ -106,7 +87,6 @@ main {
     display: block;
     width: 100vw;
     height: 100vh;
-    /* border: 1px solid purple; */
     background-size: cover;
 }
 
@@ -145,25 +125,6 @@ main {
     font-family: 'Source Sans 3', sans-serif;
 }
 
-#platform-switcher {
-    font-family: 'Roboto', sans-serif;
-    background-color: #FFFFFF00;
-    border-radius: 20px;
-    position: relative;
-    top: 11vh;
-    color: #FFF;
-    padding-left: 8px;
-    padding-right: 8px;
-    transition: ease-in-out 0.5s;
-}
-
-#platform-switcher:hover {
-    transform: scale3d(1.05, 1.05, 1.05);
-}
-
-#platform-switcher a {
-    color: #FFF;
-}
 
 /* About */
 
@@ -244,8 +205,12 @@ main {
 /* ABOUT ME PANEL */
 
 #about-me {
+    /* Credit to SolomonTech for this aswell */
+    position: absolute;
+    top: 43vh;
+    /* - */
+
     margin: auto;
-    top: 15vh;
     width: 55vw;
     color: #FFF;
 }
